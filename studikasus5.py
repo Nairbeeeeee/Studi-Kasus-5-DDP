@@ -1,8 +1,8 @@
 def hitung_biaya_hotel(jenis_kamar, durasi_menginap):
     tarif = 0
-    if jenis_kamar == "standard":
+    if jenis_kamar.lower() == "standard": #lower digunakan agar input "Standard","standard", "STANDARD"
         tarif = 200000
-    elif jenis_kamar == "deluxe":
+    elif jenis_kamar.lower() == "deluxe":
         tarif = 350000
     else: 
         print("Kamar tidak ditemukan!")
